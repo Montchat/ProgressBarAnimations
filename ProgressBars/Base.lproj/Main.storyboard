@@ -1,0 +1,234 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9532" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="ProgressBars" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="yBa-wM-RJJ" customClass="ProgressBar" customModule="ProgressBars" customModuleProvider="target">
+                                <rect key="frame" x="16" y="98" width="343" height="14"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="14" id="qcG-Go-lgu"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="progressAmount">
+                                        <real key="value" value="50"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="progressColor">
+                                        <color key="value" red="1" green="0.9604882783598222" blue="0.2128398104896807" alpha="1" colorSpace="calibratedRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6P7-fz-ym0" customClass="ProgressView" customModule="ProgressBars" customModuleProvider="target">
+                                <rect key="frame" x="289" y="20" width="70" height="70"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="HeaderLine" translatesAutoresizingMaskIntoConstraints="NO" id="okR-NP-yBX">
+                                        <rect key="frame" x="20" y="35" width="30" height="1"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="30" id="HpS-Cp-zrN"/>
+                                            <constraint firstAttribute="height" constant="1" id="KU4-W1-iU1"/>
+                                        </constraints>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0 550" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cUv-Ck-XvI">
+                                        <rect key="frame" x="0.0" y="0.0" width="70" height="70"/>
+                                        <fontDescription key="fontDescription" type="system" weight="thin" pointSize="14"/>
+                                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <color key="tintColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstItem="cUv-Ck-XvI" firstAttribute="centerX" secondItem="6P7-fz-ym0" secondAttribute="centerX" id="3kI-be-YSk"/>
+                                    <constraint firstItem="cUv-Ck-XvI" firstAttribute="width" secondItem="6P7-fz-ym0" secondAttribute="width" id="7hR-f6-Ixe"/>
+                                    <constraint firstItem="okR-NP-yBX" firstAttribute="centerX" secondItem="6P7-fz-ym0" secondAttribute="centerX" id="9hN-V3-ZTl"/>
+                                    <constraint firstItem="cUv-Ck-XvI" firstAttribute="centerY" secondItem="6P7-fz-ym0" secondAttribute="centerY" id="DaZ-5V-v6V"/>
+                                    <constraint firstAttribute="width" secondItem="6P7-fz-ym0" secondAttribute="height" multiplier="1:1" id="Dho-au-TOf"/>
+                                    <constraint firstAttribute="height" constant="70" id="NCk-Bw-gu8"/>
+                                    <constraint firstItem="okR-NP-yBX" firstAttribute="centerY" secondItem="6P7-fz-ym0" secondAttribute="centerY" id="haO-1U-xGW"/>
+                                    <constraint firstItem="cUv-Ck-XvI" firstAttribute="height" secondItem="6P7-fz-ym0" secondAttribute="height" id="oyu-o4-rkn"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="progressAmount">
+                                        <real key="value" value="0.0"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="progressColor">
+                                        <color key="value" cocoaTouchSystemColor="darkTextColor"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="z8W-ev-rXd" customClass="ProgressView" customModule="ProgressBars" customModuleProvider="target">
+                                <rect key="frame" x="94" y="20" width="70" height="70"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="HeaderLine" translatesAutoresizingMaskIntoConstraints="NO" id="FGh-7Q-2ha">
+                                        <rect key="frame" x="20" y="35" width="30" height="1"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="1" id="44t-XF-iGs"/>
+                                            <constraint firstAttribute="width" constant="30" id="rdx-N9-r8F"/>
+                                        </constraints>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MtR-aX-cbJ">
+                                        <rect key="frame" x="0.0" y="0.0" width="70" height="70"/>
+                                        <string key="text">0
+200</string>
+                                        <fontDescription key="fontDescription" type="system" weight="thin" pointSize="14"/>
+                                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <color key="tintColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstItem="FGh-7Q-2ha" firstAttribute="centerX" secondItem="z8W-ev-rXd" secondAttribute="centerX" id="FEl-I6-bDf"/>
+                                    <constraint firstAttribute="width" secondItem="z8W-ev-rXd" secondAttribute="height" multiplier="1:1" id="HVX-S4-KtF"/>
+                                    <constraint firstAttribute="height" constant="70" id="Mqx-RD-g6M"/>
+                                    <constraint firstItem="MtR-aX-cbJ" firstAttribute="width" secondItem="z8W-ev-rXd" secondAttribute="width" id="Nfb-76-wxA"/>
+                                    <constraint firstItem="FGh-7Q-2ha" firstAttribute="centerY" secondItem="z8W-ev-rXd" secondAttribute="centerY" id="UJP-qJ-IKY"/>
+                                    <constraint firstItem="MtR-aX-cbJ" firstAttribute="centerY" secondItem="z8W-ev-rXd" secondAttribute="centerY" id="UYk-Y8-fKW"/>
+                                    <constraint firstItem="MtR-aX-cbJ" firstAttribute="centerX" secondItem="z8W-ev-rXd" secondAttribute="centerX" id="hDc-kr-i4d"/>
+                                    <constraint firstItem="MtR-aX-cbJ" firstAttribute="height" secondItem="z8W-ev-rXd" secondAttribute="height" id="zlv-0M-uwP"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="progressColor">
+                                        <color key="value" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="progressAmount">
+                                        <real key="value" value="0.0"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bRi-ek-eIc" customClass="ProgressView" customModule="ProgressBars" customModuleProvider="target">
+                                <rect key="frame" x="211" y="20" width="70" height="70"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="HeaderLine" translatesAutoresizingMaskIntoConstraints="NO" id="ue9-FO-FYG">
+                                        <rect key="frame" x="20" y="35" width="30" height="1"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="30" id="BRM-CJ-1gC"/>
+                                            <constraint firstAttribute="height" constant="1" id="oYw-Wd-tIM"/>
+                                        </constraints>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CKJ-FZ-EMw">
+                                        <rect key="frame" x="0.0" y="0.0" width="70" height="70"/>
+                                        <string key="text">0
+1350</string>
+                                        <fontDescription key="fontDescription" type="system" weight="thin" pointSize="14"/>
+                                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <color key="tintColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="70" id="Gi7-TV-tiD"/>
+                                    <constraint firstItem="CKJ-FZ-EMw" firstAttribute="width" secondItem="bRi-ek-eIc" secondAttribute="width" id="Ld5-wE-FRE"/>
+                                    <constraint firstItem="ue9-FO-FYG" firstAttribute="centerY" secondItem="bRi-ek-eIc" secondAttribute="centerY" id="Xrs-5Z-wph"/>
+                                    <constraint firstItem="ue9-FO-FYG" firstAttribute="centerX" secondItem="bRi-ek-eIc" secondAttribute="centerX" id="Zmq-BB-RdR"/>
+                                    <constraint firstAttribute="width" secondItem="bRi-ek-eIc" secondAttribute="height" multiplier="1:1" id="eKy-N9-FmW"/>
+                                    <constraint firstItem="CKJ-FZ-EMw" firstAttribute="centerY" secondItem="bRi-ek-eIc" secondAttribute="centerY" id="f1Z-KS-2hQ"/>
+                                    <constraint firstItem="CKJ-FZ-EMw" firstAttribute="height" secondItem="bRi-ek-eIc" secondAttribute="height" id="nbW-5W-Cd8"/>
+                                    <constraint firstItem="CKJ-FZ-EMw" firstAttribute="centerX" secondItem="bRi-ek-eIc" secondAttribute="centerX" id="tqS-gC-znm"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="progressAmount">
+                                        <real key="value" value="0.0"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="progressColor">
+                                        <color key="value" cocoaTouchSystemColor="darkTextColor"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="GkB-NZ-fsw" customClass="ProgressView" customModule="ProgressBars" customModuleProvider="target">
+                                <rect key="frame" x="16" y="20" width="70" height="70"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="HeaderLine" translatesAutoresizingMaskIntoConstraints="NO" id="c45-FS-5bj">
+                                        <rect key="frame" x="20" y="35" width="30" height="1"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="1" id="8oJ-Jb-kIW"/>
+                                            <constraint firstAttribute="width" constant="30" id="hCe-lh-7rZ"/>
+                                        </constraints>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <color key="tintColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstItem="c45-FS-5bj" firstAttribute="centerX" secondItem="GkB-NZ-fsw" secondAttribute="centerX" id="CfT-do-P6W"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="70" id="DkV-vo-J3Z"/>
+                                    <constraint firstAttribute="height" constant="70" id="MBZ-yr-dfP"/>
+                                    <constraint firstItem="c45-FS-5bj" firstAttribute="centerY" secondItem="GkB-NZ-fsw" secondAttribute="centerY" id="YQl-hQ-I69"/>
+                                    <constraint firstAttribute="width" secondItem="GkB-NZ-fsw" secondAttribute="height" multiplier="1:1" id="d7s-mP-sfH"/>
+                                    <constraint firstAttribute="width" constant="70" id="nUh-if-80V"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="progressColor">
+                                        <color key="value" cocoaTouchSystemColor="darkTextColor"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="progressAmount">
+                                        <real key="value" value="0.0"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="SL5-dB-KUG">
+                                <rect key="frame" x="0.0" y="319" width="375" height="30"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                            </textField>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="6P7-fz-ym0" firstAttribute="leading" secondItem="bRi-ek-eIc" secondAttribute="trailing" constant="8" id="1SX-eF-2t9"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="yBa-wM-RJJ" secondAttribute="trailing" id="2RX-Fw-zPo"/>
+                            <constraint firstItem="SL5-dB-KUG" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="2xH-43-qtq"/>
+                            <constraint firstItem="yBa-wM-RJJ" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="6I0-cg-1Y7"/>
+                            <constraint firstItem="z8W-ev-rXd" firstAttribute="width" secondItem="z8W-ev-rXd" secondAttribute="height" multiplier="1:1" id="7lS-yY-aHq"/>
+                            <constraint firstItem="6P7-fz-ym0" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="A6P-Tz-EXL"/>
+                            <constraint firstItem="GkB-NZ-fsw" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="AeT-J2-wIA"/>
+                            <constraint firstItem="6P7-fz-ym0" firstAttribute="leading" secondItem="bRi-ek-eIc" secondAttribute="trailing" constant="8" id="G4M-8i-avZ"/>
+                            <constraint firstItem="yBa-wM-RJJ" firstAttribute="top" secondItem="GkB-NZ-fsw" secondAttribute="bottom" constant="8" id="Ktx-Vg-cka"/>
+                            <constraint firstItem="SL5-dB-KUG" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="O6x-eD-K02"/>
+                            <constraint firstItem="GkB-NZ-fsw" firstAttribute="width" secondItem="GkB-NZ-fsw" secondAttribute="height" multiplier="1:1" id="Oni-fp-vRb"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="6P7-fz-ym0" secondAttribute="trailing" id="RBQ-td-331"/>
+                            <constraint firstItem="z8W-ev-rXd" firstAttribute="leading" secondItem="GkB-NZ-fsw" secondAttribute="trailing" constant="8" id="Va3-AS-jfK"/>
+                            <constraint firstItem="bRi-ek-eIc" firstAttribute="width" secondItem="bRi-ek-eIc" secondAttribute="height" multiplier="1:1" id="ZqA-iZ-nBj"/>
+                            <constraint firstItem="GkB-NZ-fsw" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="auM-5k-0Ax"/>
+                            <constraint firstItem="bRi-ek-eIc" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="hCN-gx-YHJ"/>
+                            <constraint firstItem="6P7-fz-ym0" firstAttribute="width" secondItem="6P7-fz-ym0" secondAttribute="height" multiplier="1:1" id="jw8-wz-SMp"/>
+                            <constraint firstItem="SL5-dB-KUG" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="sAg-Zn-1Nz"/>
+                            <constraint firstAttribute="trailing" secondItem="SL5-dB-KUG" secondAttribute="trailing" id="wtT-OO-Jwg"/>
+                            <constraint firstItem="z8W-ev-rXd" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="zPi-mR-fmX"/>
+                        </constraints>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                    <connections>
+                        <outlet property="progressAmountTextField" destination="SL5-dB-KUG" id="XH9-mX-yyr"/>
+                        <outlet property="progressBar" destination="yBa-wM-RJJ" id="5nA-Ki-11m"/>
+                        <outlet property="progressView" destination="GkB-NZ-fsw" id="e92-Xr-kUP"/>
+                        <outlet property="progressView2" destination="6P7-fz-ym0" id="kYd-6x-zTe"/>
+                        <outlet property="progressView3" destination="z8W-ev-rXd" id="Th4-if-rTS"/>
+                        <outlet property="progressView4" destination="bRi-ek-eIc" id="O8o-TQ-CvV"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="345.5" y="409.5"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="HeaderLine" width="35" height="35"/>
+    </resources>
+</document>
